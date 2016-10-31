@@ -48,6 +48,10 @@ if has("cscope")
     " show msg when any other cscope db added
     set cscopeverbose  
 
+    " use the quickfix window
+    if has('quickfix')
+	    set cscopequickfix=s-,c-,d-,i-,t-,e-
+    endif
 
     """"""""""""" My cscope/vim key mappings
     "
